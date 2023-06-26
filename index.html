@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <script src="library.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header"><h1>MyLibrary</h1>  </div>
+    <div class="main-content">
+        <div class="new-book-container">
+            <button class="new-book-btn" id="new-book-btn">Add a Book</button>
+        </div>
+        <div class="container" >
+            <form class="form" id="new-book-form" style="display: none;">
+                <div class="form-elements">
+                    <label for="title"></label>
+                    <input type="text" class="input-txt" id="title" required placeholder="title">
+                </div>
+                <div class="form-elements">
+                    <label for="author"></label>
+                    <input type="text" class="input-txt" id="author" placeholder="author">
+                </div>
+                <div class="form-elements">
+                    <label for="pages"></label>
+                    <input type="number" class="input-txt" id="pages" placeholder="   pages">
+                </div>
+                <div class="form-elements">
+                    <label for="read" class="input-check" style="color: rgb(159, 156, 156);">have you read it?</label>
+                    <input type="checkbox"  id="read">
+                </div>
+                <div class="form-elements">
+                    <input type="submit"  class="submit-btn" value="Add Book">
+                </div>
+                <div class="form-elements">
+                    <button class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+    
+            
+        </div>
+        <div id="Library"></div>
+    </div>
+    
+    
+</body>
+</html>
